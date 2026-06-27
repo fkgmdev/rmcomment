@@ -4,7 +4,7 @@ use std::env::args;
 fn main() {
     let args: Vec<String>  = args().collect();
     if args.len() == 1 || args.len() > 2 {
-        println!("Usage: remcomment <filepath>");
+        println!("Usage: rmcomment <filepath>");
         process::exit(1)
     }
     let file = String::from(&args[1]);
